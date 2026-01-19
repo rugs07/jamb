@@ -1,8 +1,8 @@
 export default function Header() {
   return (
-    <header className="container-padding section-y-sm header">
+    <header className="container-padding section-block-sm flex items-center justify-between">
       <div className="fl2">Jamb.</div>
-      <div className="icon-row">
+      <div className="flex items-center gap-6">
         <button aria-label="Search">
           <svg
             width="20"

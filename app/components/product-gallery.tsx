@@ -27,21 +27,21 @@ export default function ProductGallery({
 
   return (
     <section className={bgClass}>
-      <div className="container-padding section-y-lg">
-        <h2 className="fl2">{title}</h2>
+      <div className="container-padding section-block">
+        <h2 className="fl2 mb-6 md:mb-8">{title}</h2>
         <div className="gallery-grid">
           {products.map((product, index) => (
-            <div key={index} className="card">
-              <div className="media media-square">
+            <div key={index} className="flex flex-col">
+              <div className="relative w-full aspect-square overflow-hidden">
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
                   fill
-                  className="media-img"
+                  className="object-cover"
                 />
               </div>
-              <h3 className="fl4 card-title">{product.title}</h3>
-              <p className="fl6 card-subtitle">{product.subtitle}</p>
+              <h3 className="fl4 mt-3">{product.title}</h3>
+              <p className="text-sm text-[#555555] mt-1">{product.subtitle}</p>
             </div>
           ))}
         </div>

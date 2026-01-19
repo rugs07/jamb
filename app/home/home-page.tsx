@@ -34,7 +34,7 @@ export default function HomePage() {
   );
 
   return (
-    <main className="page">
+    <main className="min-h-screen">
       <Header />
 
       <HeroSection
@@ -104,21 +104,21 @@ export default function HomePage() {
       />
 
       <section className="bg-light-grey">
-        <div className="container-padding section-y-lg">
-          <h2 className="fl2 center">{homeContent.galleries.stories.title}</h2>
+        <div className="container-padding section-block">
+          <h2 className="fl2 text-center mb-6 md:mb-8">{homeContent.galleries.stories.title}</h2>
           <div className="gallery-grid">
             {latestStories.map((story) => (
-              <div key={story.imageAlt} className="card">
-                <div className="media media-square">
+              <div key={story.imageAlt} className="flex flex-col">
+                <div className="relative w-full aspect-square overflow-hidden">
                   <Image
                     src={story.imageSrc}
                     alt={story.imageAlt}
                     fill
-                    className="media-img"
+                    className="object-cover"
                   />
                 </div>
-                <h3 className="fl4 card-title">{story.title}</h3>
-                <p className="fl6 card-subtitle">{story.subtitle}</p>
+                <h3 className="fl4 mt-3">{story.title}</h3>
+                <p className="text-sm text-[#555555] mt-1">{story.subtitle}</p>
               </div>
             ))}
           </div>

@@ -29,31 +29,29 @@ export default function TwoColumnSection({
       : "";
 
   const textContent = (
-    <div className="stack">
-      {journalLabel && (
-        <div className="kicker">{journalLabel}</div>
-      )}
+    <div className="flex flex-col gap-6">
+      {journalLabel && <div className="text-xs uppercase tracking-[0.12em] opacity-60">{journalLabel}</div>}
       <h2 className="fl1">{title}</h2>
-      <p className="fl4 muted max-text">{description}</p>
-      <button className="btn-primary self-start nowrap">{buttonText}</button>
+      <p className="fl4 muted max-w-3xl">{description}</p>
+      <button className="btn-primary self-start">{buttonText}</button>
     </div>
   );
 
   const imageContent = (
-    <div className="media media-portrait media-square-md">
+    <div className="relative w-full overflow-hidden aspect-[4/5] md:aspect-square">
       <Image
         src={imageSrc}
         alt={imageAlt}
         fill
-        className="media-img"
+        className="object-cover"
       />
     </div>
   );
 
   return (
     <section className={bgClass}>
-      <div className="container-padding section-y-lg">
-        <div className="grid-2">
+      <div className="container-padding section-block">
+        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-14">
           {imagePosition === "left" ? (
             <>
               {imageContent}
