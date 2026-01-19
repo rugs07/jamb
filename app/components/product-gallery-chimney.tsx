@@ -13,7 +13,7 @@ interface ProductGalleryProps {
   backgroundColor?: "beige" | "light-grey" | "default";
 }
 
-export default function ProductGallery({
+export default function ProductGalleryChimney({
   title,
   products,
   backgroundColor = "light-grey",
@@ -28,11 +28,11 @@ export default function ProductGallery({
   return (
     <section className={bgClass}>
       <div className="container-padding section-block">
-        <h2 className="fl2 mb-6 md:mb-8">{title}</h2>
-        <div className="gallery-grid">
+        <h2 className="fl2">{title}</h2>
+        <div className="grid grid-cols-4 gap-4">
           {products.map((product, index) => (
             <div key={index} className="flex flex-col">
-              <div className="relative w-full aspect-[3/4] overflow-hidden">
+              <div className="relative w-full aspect-square overflow-hidden">
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}

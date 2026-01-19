@@ -31,12 +31,12 @@ export default function HeroSection({
               )}
             </div>
           </div>
-          <div className="relative w-full overflow-hidden aspect-[3/4] md:aspect-[3/4]">
+          <div className="relative w-full overflow-hidden aspect-[3/4] md:aspect-[2/3] max-h-[650px]">
             <Image
               src={imageSrc}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
           </div>

@@ -7,35 +7,33 @@ import ProductGallery from "../components/product-gallery";
 import SubscriptionSection from "../components/subscription-section";
 import Footer from "../components/footer";
 import { homeContent, makeGalleryItems } from "./home-content";
+import ProductGalleryFurniture from "../components/product-gallery-furniture";
+import ProductGalleryChimney from "../components/product-gallery-chimney";
 
 export default function HomePage() {
   const latestChimneypieces = makeGalleryItems(
     homeContent.galleries.chimneypieces.itemsCount,
     homeContent.galleries.chimneypieces.imageSrc,
-    homeContent.galleries.chimneypieces.imageAltPrefix,
+    homeContent.galleries.chimneypieces.imageAltPrefix
   );
 
   const latestLighting = makeGalleryItems(
     homeContent.galleries.lighting.itemsCount,
     homeContent.galleries.lighting.imageSrc,
-    homeContent.galleries.lighting.imageAltPrefix,
-  );
-
-  const latestFurniture = makeGalleryItems(
-    homeContent.galleries.furniture.itemsCount,
-    homeContent.galleries.furniture.imageSrc,
-    homeContent.galleries.furniture.imageAltPrefix,
+    homeContent.galleries.lighting.imageAltPrefix
   );
 
   const latestStories = makeGalleryItems(
     homeContent.galleries.stories.itemsCount,
     homeContent.galleries.stories.imageSrc,
-    homeContent.galleries.stories.imageAltPrefix,
+    homeContent.galleries.stories.imageAltPrefix
   );
 
   return (
     <main className="min-h-screen">
       <Header />
+      <img src="/hero.png" className="mx-auto w-full container-padding" alt="" />
+      <Navigation />
 
       <HeroSection
         title={homeContent.hero.title}
@@ -46,23 +44,6 @@ export default function HomePage() {
         imageAlt={homeContent.hero.imageAlt}
       />
 
-      <Navigation />
-
-      <TwoColumnSection
-        title={homeContent.sections.fireplaces.title}
-        description={homeContent.sections.fireplaces.description}
-        buttonText={homeContent.sections.fireplaces.cta}
-        imageSrc={homeContent.sections.fireplaces.imageSrc}
-        imageAlt={homeContent.sections.fireplaces.imageAlt}
-        backgroundColor="beige"
-      />
-
-      <ProductGallery
-        title={homeContent.galleries.chimneypieces.title}
-        products={latestChimneypieces}
-        backgroundColor="light-grey"
-      />
-
       <TwoColumnSection
         title={homeContent.sections.lighting.title}
         description={homeContent.sections.lighting.description}
@@ -70,6 +51,12 @@ export default function HomePage() {
         imageSrc={homeContent.sections.lighting.imageSrc}
         imageAlt={homeContent.sections.lighting.imageAlt}
         backgroundColor="beige"
+      />
+
+      <ProductGalleryChimney
+        title={homeContent.galleries.chimneypieces.title}
+        products={latestChimneypieces}
+        backgroundColor="light-grey"
       />
 
       <ProductGallery
@@ -87,9 +74,9 @@ export default function HomePage() {
         backgroundColor="beige"
       />
 
-      <ProductGallery
+      <ProductGalleryFurniture
         title={homeContent.galleries.furniture.title}
-        products={latestFurniture}
+        products={homeContent.galleries.furniture.products}
         backgroundColor="light-grey"
       />
 
@@ -105,7 +92,9 @@ export default function HomePage() {
 
       <section className="bg-light-grey">
         <div className="container-padding section-block">
-          <h2 className="fl2 text-center mb-6 md:mb-8">{homeContent.galleries.stories.title}</h2>
+          <h2 className="fl2 text-center mb-6 md:mb-8">
+            {homeContent.galleries.stories.title}
+          </h2>
           <div className="gallery-grid">
             {latestStories.map((story) => (
               <div key={story.imageAlt} className="flex flex-col">
@@ -118,7 +107,9 @@ export default function HomePage() {
                   />
                 </div>
                 <h3 className="fl4 mt-3">{story.title}</h3>
-                <p className="text-sm text-[#555555] mt-1">{story.subtitle}</p>
+                <p className="text-sm text-[#555555] mt-1">
+                  {story.subtitle}
+                </p>
               </div>
             ))}
           </div>
@@ -137,4 +128,3 @@ export default function HomePage() {
     </main>
   );
 }
-

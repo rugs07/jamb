@@ -25,12 +25,16 @@ export default function TwoColumnSection({
     backgroundColor === "beige"
       ? "bg-beige"
       : backgroundColor === "light-grey"
-      ? "bg-light-grey"
-      : "";
+        ? "bg-light-grey"
+        : "";
 
   const textContent = (
     <div className="flex flex-col gap-6">
-      {journalLabel && <div className="text-xs uppercase tracking-[0.12em] opacity-60">{journalLabel}</div>}
+      {journalLabel && (
+        <div className="text-xs uppercase tracking-[0.12em] opacity-60">
+          {journalLabel}
+        </div>
+      )}
       <h2 className="fl1">{title}</h2>
       <p className="fl4 muted max-w-3xl">{description}</p>
       <button className="btn-primary self-start">{buttonText}</button>
@@ -38,12 +42,13 @@ export default function TwoColumnSection({
   );
 
   const imageContent = (
-    <div className="relative w-full overflow-hidden aspect-[4/5] md:aspect-square">
+    <div className="relative w-full overflow-hidden aspect-[3/4] md:aspect-[2/3] max-h-[650px]">
       <Image
         src={imageSrc}
         alt={imageAlt}
         fill
-        className="object-cover"
+        className="object-contain"
+        priority
       />
     </div>
   );

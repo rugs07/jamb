@@ -24,12 +24,12 @@ export default function SubscriptionSection({
             <p className="fl4 muted max-w-3xl">{description}</p>
             <button className="btn-primary self-start">{buttonText}</button>
           </div>
-          <div className="relative w-full overflow-hidden aspect-[3/4] md:aspect-[2/3]">
+          <div className="relative w-full overflow-hidden aspect-[3/4] max-h-[600px]">
             <Image
               src={imageSrc}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </div>
