@@ -1,65 +1,155 @@
 import Image from "next/image";
+import Header from "./components/header";
+import Navigation from "./components/navigation";
+import HeroSection from "./components/hero-section";
+import TwoColumnSection from "./components/two-column-section";
+import ProductGallery from "./components/product-gallery";
+import SubscriptionSection from "./components/subscription-section";
+import Footer from "./components/footer";
 
 export default function Home() {
+  // Placeholder data - these will be replaced with actual images from Sanity CMS
+  const latestStories = Array.from({ length: 5 }, (_, i) => ({
+    imageSrc: "/placeholder-story.jpg",
+    imageAlt: `Story ${i + 1}`,
+    title: "Lorem Ipsum",
+    subtitle: "Subtitle",
+  }));
+
+  const latestChimneypieces = Array.from({ length: 4 }, (_, i) => ({
+    imageSrc: "/placeholder-chimneypiece.jpg",
+    imageAlt: `Chimneypiece ${i + 1}`,
+    title: "Lorem Ipsum",
+    subtitle: "Subtitle",
+  }));
+
+  const latestLighting = Array.from({ length: 5 }, (_, i) => ({
+    imageSrc: "/placeholder-lighting.jpg",
+    imageAlt: `Lighting ${i + 1}`,
+    title: "Lorem Ipsum",
+    subtitle: "Subtitle",
+  }));
+
+  const latestFurniture = Array.from({ length: 5 }, (_, i) => ({
+    imageSrc: "/placeholder-furniture.jpg",
+    imageAlt: `Furniture ${i + 1}`,
+    title: "Lorem Ipsum",
+    subtitle: "Subtitle",
+  }));
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen">
+      <Header />
+      
+      {/* Hero Section - Fireplaces */}
+      <HeroSection
+        title="Fireplaces"
+        description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam."
+        buttonText="Explore our Fireplaces"
+        secondaryButtonText="Sell an Antique Chimneypiece"
+        imageSrc="/placeholder-fireplace-hero.jpg"
+        imageAlt="Fireplace hero"
+      />
+
+      <Navigation />
+
+      {/* Fireplaces Two-Column Section */}
+      <TwoColumnSection
+        title="Fireplaces"
+        description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam."
+        buttonText="Explore our Fireplaces"
+        imageSrc="/placeholder-fireplace-section.jpg"
+        imageAlt="Fireplace section"
+        backgroundColor="beige"
+      />
+
+      {/* Latest Chimneypieces Gallery */}
+      <ProductGallery
+        title="Our latest chimneypieces"
+        products={latestChimneypieces}
+        backgroundColor="light-grey"
+      />
+
+      {/* Lighting Two-Column Section */}
+      <TwoColumnSection
+        title="Lighting"
+        description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam."
+        buttonText="Explore our Lighting"
+        imageSrc="/placeholder-lighting-hero.jpg"
+        imageAlt="Lighting hero"
+        backgroundColor="beige"
+      />
+
+      {/* Latest Lighting Gallery */}
+      <ProductGallery
+        title="Our latest lighting"
+        products={latestLighting}
+        backgroundColor="light-grey"
+      />
+
+      {/* Furniture Two-Column Section */}
+      <TwoColumnSection
+        title="Furniture"
+        description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam."
+        buttonText="Explore our Furniture"
+        imageSrc="/placeholder-furniture-hero.jpg"
+        imageAlt="Furniture hero"
+        backgroundColor="beige"
+      />
+
+      {/* Latest Furniture Gallery */}
+      <ProductGallery
+        title="Our latest furniture"
+        products={latestFurniture}
+        backgroundColor="light-grey"
+      />
+
+      {/* Journal Two-Column Section */}
+      <TwoColumnSection
+        title="The Grand Collection"
+        description="Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam."
+        buttonText="Discover more"
+        imageSrc="/placeholder-journal-hero.jpg"
+        imageAlt="Journal hero"
+        backgroundColor="beige"
+        journalLabel="JOURNAL"
+      />
+
+      {/* Latest Stories Gallery */}
+      <section className="bg-light-grey">
+        <div className="container-px container-py-lg">
+          <h2 className="font-level-2 mb-8 md:mb-12 text-center">
+            See more of our latest stories.
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+            {latestStories.map((story, index) => (
+              <div key={index} className="flex flex-col">
+                <div className="relative w-full aspect-square mb-4">
+                  <Image
+                    src={story.imageSrc}
+                    alt={story.imageAlt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="font-level-4 mb-1">{story.title}</h3>
+                <p className="font-level-6 opacity-70">{story.subtitle}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Subscription Section */}
+      <SubscriptionSection
+        title="Subscribe to the Jamb Journal"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        buttonText="Discover more"
+        imageSrc="/placeholder-journal-cover.jpg"
+        imageAlt="Jamb Journal cover"
+      />
+
+      <Footer />
+    </main>
   );
 }
