@@ -16,19 +16,12 @@ interface ProductGalleryProps {
 export default function ProductGallery({
   title,
   products,
-  backgroundColor = "light-grey",
 }: ProductGalleryProps) {
-  const bgClass =
-    backgroundColor === "beige"
-      ? "bg-beige"
-      : backgroundColor === "light-grey"
-      ? "bg-light-grey"
-      : "";
 
   return (
-    <section className={bgClass}>
-      <div className="container-padding section-block">
-        <h2 className="fl2 mb-6 md:mb-8">{title}</h2>
+    <section className="bg-[#E3E3E3]">
+      <div className="container-padding section-block-padding">
+        <h2 className="fl2 mb-8 md:mb-12 text-center">{title}</h2>
         <div className="gallery-grid">
           {products.map((product, index) => (
             <div key={index} className="flex flex-col">
@@ -40,8 +33,8 @@ export default function ProductGallery({
                   className="object-contain"
                 />
               </div>
-              <h3 className="fl4 mt-3">{product.title}</h3>
-              <p className="text-sm text-[#555555] mt-1">{product.subtitle}</p>
+              <h3 className="fl4 mt-3 text-center">{product.title}</h3>
+              <p className="text-sm text-[#555555] mt-1 text-center">{product.subtitle}</p>
             </div>
           ))}
         </div>

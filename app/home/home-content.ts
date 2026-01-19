@@ -107,15 +107,18 @@ export const homeContent = {
   subscription: {
     title: "Subscribe to the Jamb Journal",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam.",
     cta: "Discover more",
     imageSrc: "/jamb-journal.png",
     imageAlt: "Jamb Journal cover",
   },
 } as const;
 
-
-export function makeGalleryItems(count: number, imageSrc: string, imageAltPrefix: string) {
+export function makeGalleryItems(
+  count: number,
+  imageSrc: string,
+  imageAltPrefix: string,
+) {
   return Array.from({ length: count }, (_, i) => ({
     imageSrc,
     imageAlt: `${imageAltPrefix} ${i + 1}`,
@@ -123,4 +126,3 @@ export function makeGalleryItems(count: number, imageSrc: string, imageAltPrefix
     subtitle: "Subtitle",
   }));
 }
-

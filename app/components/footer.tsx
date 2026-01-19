@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-beige">
-      <div className="container-padding section-block">
+    <footer className="bg-[#E3E3E3]">
+      <div className="container-padding section-block-padding">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 md:gap-12 lg:gap-16 text-sm text-[#555555]">
           {/* Contact Info */}
           <div className="flex flex-col gap-2">

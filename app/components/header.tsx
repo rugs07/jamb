@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="container-padding section-block-sm flex items-center justify-between">
+    <header className="container-padding py-8 flex items-center justify-between">
       <div className="">
         <img src="/jamb-logo.png" alt="" />
       </div>

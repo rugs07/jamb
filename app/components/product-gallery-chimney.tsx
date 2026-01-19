@@ -10,25 +10,17 @@ interface ProductItem {
 interface ProductGalleryProps {
   title: string;
   products: ProductItem[];
-  backgroundColor?: "beige" | "light-grey" | "default";
 }
 
 export default function ProductGalleryChimney({
   title,
   products,
-  backgroundColor = "light-grey",
 }: ProductGalleryProps) {
-  const bgClass =
-    backgroundColor === "beige"
-      ? "bg-beige"
-      : backgroundColor === "light-grey"
-      ? "bg-light-grey"
-      : "";
 
   return (
-    <section className={bgClass}>
-      <div className="container-padding section-block">
-        <h2 className="fl2">{title}</h2>
+    <section className='bg-[#E3E3E3]'>
+      <div className="container-padding section-block-top">
+        <h2 className="fl2 text-center">{title}</h2>
         <div className="grid grid-cols-4 gap-4">
           {products.map((product, index) => (
             <div key={index} className="flex flex-col">
@@ -40,8 +32,8 @@ export default function ProductGalleryChimney({
                   className="object-contain"
                 />
               </div>
-              <h3 className="fl4 mt-3">{product.title}</h3>
-              <p className="text-sm text-[#555555] mt-1">{product.subtitle}</p>
+              <h3 className="fl4 mt-3 text-center">{product.title}</h3>
+              <p className="text-sm text-[#555555] mt-1 text-center">{product.subtitle}</p>
             </div>
           ))}
         </div>

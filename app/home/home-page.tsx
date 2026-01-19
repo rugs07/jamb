@@ -56,13 +56,11 @@ export default function HomePage() {
       <ProductGalleryChimney
         title={homeContent.galleries.chimneypieces.title}
         products={latestChimneypieces}
-        backgroundColor="light-grey"
       />
 
       <ProductGallery
         title={homeContent.galleries.lighting.title}
         products={latestLighting}
-        backgroundColor="light-grey"
       />
 
       <TwoColumnSection
@@ -77,7 +75,6 @@ export default function HomePage() {
       <ProductGalleryFurniture
         title={homeContent.galleries.furniture.title}
         products={homeContent.galleries.furniture.products}
-        backgroundColor="light-grey"
       />
 
       <TwoColumnSection
@@ -90,8 +87,8 @@ export default function HomePage() {
         journalLabel={homeContent.sections.journal.label}
       />
 
-      <section className="bg-light-grey">
-        <div className="container-padding section-block">
+      <section className="bg-[#E3E3E3]">
+        <div className="container-padding section-block-padding">
           <h2 className="fl2 text-center mb-6 md:mb-8">
             {homeContent.galleries.stories.title}
           </h2>

@@ -2,7 +2,7 @@ export default function Navigation() {
   const navItems = ["Fireplaces", "Lighting", "Furniture", "Journal"];
 
   return (
-    <nav className="container-padding section-block-sm">
+    <nav className="container-padding section-block-top">
       <div className="flex flex-wrap items-center justify-center gap-3 text-base sm:text-lg">
         {navItems.map((item, index) => (
           <span key={item} className="flex items-center gap-3">
