@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export default function Header() {
   return (
-    <header className="container-px container-py-sm flex items-center justify-between">
-      <div className="font-level-2">Jamb.</div>
-      <div className="flex items-center gap-6">
+    <header className="container-padding section-y-sm header">
+      <div className="fl2">Jamb.</div>
+      <div className="icon-row">
         <button aria-label="Search">
           <svg
             width="20"

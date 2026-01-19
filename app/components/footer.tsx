@@ -1,169 +1,169 @@
 export default function Footer() {
   return (
     <footer className="bg-beige">
-      <div className="container-px container-py-lg">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 lg:gap-16">
+      <div className="container-padding section-y-lg">
+        <div className="footer-grid">
           {/* Contact Info */}
-          <div className="flex flex-col gap-4">
-            <div className="font-level-5">Tel: +44 (0) 207 730 2122</div>
-            <div className="font-level-5">95-97 Pimlico Rd</div>
-            <div className="font-level-5">London SW1W 8PH</div>
-            <div className="font-level-5">hello@jamb.co.uk</div>
+          <div className="stack fl5">
+            <div>Tel: +44 (0) 207 730 2122</div>
+            <div>95-97 Pimlico Rd</div>
+            <div>London SW1W 8PH</div>
+            <div>hello@jamb.co.uk</div>
           </div>
 
           {/* Chimneypieces */}
-          <div className="flex flex-col gap-4">
-            <div className="font-level-4 mb-2">Reproduction Chimneypieces</div>
-            <a href="#" className="font-level-5 hover:opacity-70">
+          <div className="stack">
+            <div className="fl4">Reproduction Chimneypieces</div>
+            <a href="#" className="fl5 nav-item">
               Marble
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Stone
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Grates & Accessories
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Guide to Jamb Marbles
             </a>
-            <div className="font-level-4 mt-4 mb-2">Antique Chimneypieces</div>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <div className="fl4 mt-24">Antique Chimneypieces</div>
+            <a href="#" className="fl5 nav-item">
               French & Italian
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Georgian
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Regency
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70 mt-2">
+            <a href="#" className="fl5 nav-item mt-8">
               Sell an Antique Chimneypiece
             </a>
           </div>
 
           {/* Lighting & Furniture */}
-          <div className="flex flex-col gap-4">
-            <div className="font-level-4 mb-2">Reproduction Lighting</div>
-            <a href="#" className="font-level-5 hover:opacity-70">
+          <div className="stack">
+            <div className="fl4">Reproduction Lighting</div>
+            <a href="#" className="fl5 nav-item">
               Hanging Globes
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Hanging Lanterns
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Wall Lights
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Dish Lights
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Table Lamps
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Chains & Brackets
             </a>
-            <div className="font-level-4 mt-4 mb-2">Reproduction Furniture</div>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <div className="fl4 mt-24">Reproduction Furniture</div>
+            <a href="#" className="fl5 nav-item">
               Seating
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Tables
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Mirrors
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               The Pantry Collection
             </a>
           </div>
 
           {/* Antique Furniture & Journal */}
-          <div className="flex flex-col gap-4">
-            <div className="font-level-4 mb-2">Antique Furniture</div>
-            <a href="#" className="font-level-5 hover:opacity-70">
+          <div className="stack">
+            <div className="fl4">Antique Furniture</div>
+            <a href="#" className="fl5 nav-item">
               Seating
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Tables
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Desks
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Bookcases & Cabinets
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Chests
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Mirrors
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Fire Accessories
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Objects
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Works of Arts
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Lighting
             </a>
-            <div className="font-level-4 mt-4 mb-2">Journal</div>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <div className="fl4 mt-24">Journal</div>
+            <a href="#" className="fl5 nav-item">
               Praesentium
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Voluptatibus
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Accusamus
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Iusto
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Dignissimos
             </a>
           </div>
 
           {/* About & Newsletter */}
-          <div className="flex flex-col gap-4">
-            <div className="font-level-4 mb-2">About</div>
-            <a href="#" className="font-level-5 hover:opacity-70">
+          <div className="stack">
+            <div className="fl4">About</div>
+            <a href="#" className="fl5 nav-item">
               Founders
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Team
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               History
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Galleries
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Workshops
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Showrooms
             </a>
-            <a href="#" className="font-level-5 hover:opacity-70">
+            <a href="#" className="fl5 nav-item">
               Terms & Conditions
             </a>
-            <div className="font-level-4 mt-4 mb-2">Newsletter</div>
-            <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
+            <div className="fl4 mt-24">Newsletter</div>
+            <div className="stack-sm">
+              <div className="footer-input-row">
                 <input
                   type="text"
                   placeholder="Search"
-                  className="flex-1 px-4 py-2 border border-current bg-transparent font-level-5 focus:outline-none focus:ring-1 focus:ring-current"
+                  className="footer-input fl5"
                 />
-                <button className="btn-primary px-6 whitespace-nowrap">Subscribe</button>
+                <button className="btn-primary-compact nowrap">Subscribe</button>
               </div>
-              <label className="flex items-center gap-2 font-level-6 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4" />
+              <label className="footer-consent fl6">
+                <input type="checkbox" className="checkbox" />
                 <span>I agree to our Privacy Policy</span>
               </label>
             </div>

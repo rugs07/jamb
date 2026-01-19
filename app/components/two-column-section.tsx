@@ -29,33 +29,31 @@ export default function TwoColumnSection({
       : "";
 
   const textContent = (
-    <div className="flex flex-col gap-6">
+    <div className="stack">
       {journalLabel && (
-        <div className="font-level-6 uppercase tracking-wider opacity-60">
-          {journalLabel}
-        </div>
+        <div className="kicker">{journalLabel}</div>
       )}
-      <h2 className="font-level-1">{title}</h2>
-      <p className="font-level-4 opacity-80">{description}</p>
-      <button className="btn-primary self-start">{buttonText}</button>
+      <h2 className="fl1">{title}</h2>
+      <p className="fl4 muted max-text">{description}</p>
+      <button className="btn-primary self-start nowrap">{buttonText}</button>
     </div>
   );
 
   const imageContent = (
-    <div className="relative w-full aspect-[4/5] md:aspect-square">
+    <div className="media media-portrait media-square-md">
       <Image
         src={imageSrc}
         alt={imageAlt}
         fill
-        className="object-cover"
+        className="media-img"
       />
     </div>
   );
 
   return (
     <section className={bgClass}>
-      <div className="container-px container-py-lg">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+      <div className="container-padding section-y-lg">
+        <div className="grid-2">
           {imagePosition === "left" ? (
             <>
               {imageContent}

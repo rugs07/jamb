@@ -17,19 +17,19 @@ export default function SubscriptionSection({
 }: SubscriptionSectionProps) {
   return (
     <section className="bg-light-grey">
-      <div className="container-px container-py-lg">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <div className="flex flex-col gap-6 md:gap-8">
-            <h2 className="font-level-2">{title}</h2>
-            <p className="font-level-4 opacity-80 max-w-lg">{description}</p>
-            <button className="btn-primary self-start">{buttonText}</button>
+      <div className="container-padding section-y-lg">
+        <div className="grid-2">
+          <div className="stack stack-lg">
+            <h2 className="fl2">{title}</h2>
+            <p className="fl4 muted max-text">{description}</p>
+            <button className="btn-primary self-start nowrap">{buttonText}</button>
           </div>
-          <div className="relative w-full aspect-[3/4] md:aspect-[2/3]">
+          <div className="media media-portrait-tight media-tall-md">
             <Image
               src={imageSrc}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="media-img"
             />
           </div>
         </div>

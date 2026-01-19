@@ -19,24 +19,24 @@ export default function HeroSection({
 }: HeroSectionProps) {
   return (
     <section className="bg-beige">
-      <div className="container-px container-py-lg">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <div className="flex flex-col gap-6 md:gap-8">
-            <h1 className="font-level-1">{title}</h1>
-            <p className="font-level-4 opacity-80 max-w-lg">{description}</p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary whitespace-nowrap">{buttonText}</button>
+      <div className="container-padding section-y-lg">
+        <div className="grid-2">
+          <div className="stack stack-lg">
+            <h1 className="fl1">{title}</h1>
+            <p className="fl4 muted max-text">{description}</p>
+            <div className="row-actions">
+              <button className="btn-primary nowrap">{buttonText}</button>
               {secondaryButtonText && (
-                <button className="btn-primary whitespace-nowrap">{secondaryButtonText}</button>
+                <button className="btn-primary nowrap">{secondaryButtonText}</button>
               )}
             </div>
           </div>
-          <div className="relative w-full aspect-[4/5] md:aspect-[3/4]">
+          <div className="media media-portrait-tight">
             <Image
               src={imageSrc}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="media-img"
               priority
             />
           </div>

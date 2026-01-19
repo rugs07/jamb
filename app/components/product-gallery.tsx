@@ -27,21 +27,21 @@ export default function ProductGallery({
 
   return (
     <section className={bgClass}>
-      <div className="container-px container-py-lg">
-        <h2 className="font-level-2 mb-8 md:mb-12">{title}</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
+      <div className="container-padding section-y-lg">
+        <h2 className="fl2">{title}</h2>
+        <div className="gallery-grid">
           {products.map((product, index) => (
-            <div key={index} className="flex flex-col">
-              <div className="relative w-full aspect-square mb-4 md:mb-6">
+            <div key={index} className="card">
+              <div className="media media-square">
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
                   fill
-                  className="object-cover"
+                  className="media-img"
                 />
               </div>
-              <h3 className="font-level-4 mb-1">{product.title}</h3>
-              <p className="font-level-6 opacity-70">{product.subtitle}</p>
+              <h3 className="fl4 card-title">{product.title}</h3>
+              <p className="fl6 card-subtitle">{product.subtitle}</p>
             </div>
           ))}
         </div>
