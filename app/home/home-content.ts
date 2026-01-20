@@ -5,7 +5,7 @@ export const homeContent = {
       "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
     primaryCta: "Explore our Fireplaces",
     secondaryCta: "Sell an Antique Chimneypiece",
-    imageSrc: "/fireplaces.png",
+    imageSrc: "/landing/fireplaces.png",
     imageAlt: "Fireplace hero",
   },
 
@@ -15,7 +15,7 @@ export const homeContent = {
       description:
         "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
       cta: "Explore our Fireplaces",
-      imageSrc: "/fireplaces.png",
+      imageSrc: "/landing/fireplaces.png",
       imageAlt: "Fireplace section",
     },
     lighting: {
@@ -23,7 +23,7 @@ export const homeContent = {
       description:
         "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
       cta: "Explore our Lighting",
-      imageSrc: "/lightning.png",
+      imageSrc: "/landing/lightning.png",
       imageAlt: "Lighting hero",
     },
     furniture: {
@@ -31,7 +31,7 @@ export const homeContent = {
       description:
         "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
       cta: "Explore our Furniture",
-      imageSrc: "/furniture.png",
+      imageSrc: "/landing/furniture.png",
       imageAlt: "Furniture hero",
     },
     journal: {
@@ -40,7 +40,7 @@ export const homeContent = {
       description:
         "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
       cta: "Discover more",
-      imageSrc: "/grand-collection.png",
+      imageSrc: "/landing/grand-collection.png",
       imageAlt: "Journal hero",
     },
   },
@@ -49,14 +49,14 @@ export const homeContent = {
     chimneypieces: {
       title: "Our latest chimneypieces",
       itemsCount: 4,
-      imageSrc: "/chimney.png",
+      imageSrc: "/landing/chimney.png",
       imageAltPrefix: "Chimneypiece",
     },
 
     lighting: {
       title: "Our latest lighting",
       itemsCount: 5,
-      imageSrc: "/dishlight.png",
+      imageSrc: "/landing/dishlight.png",
       imageAltPrefix: "Lighting",
     },
 
@@ -64,31 +64,31 @@ export const homeContent = {
       title: "Our latest furniture",
       products: [
         {
-          imageSrc: "/furniture1.png",
+          imageSrc: "/landing/furniture1.png",
           imageAlt: "Furniture 1",
           title: "Modern Sofa",
           subtitle: "Comfortable 3-seater design",
         },
         {
-          imageSrc: "/furniture2.png",
+          imageSrc: "/landing/furniture2.png",
           imageAlt: "Furniture 2",
           title: "Wooden Dining Table",
           subtitle: "Solid wood premium finish",
         },
         {
-          imageSrc: "/furniture3.png",
+          imageSrc: "/landing/furniture3.png",
           imageAlt: "Furniture 3",
           title: "Accent Chair",
           subtitle: "Minimal ergonomic design",
         },
         {
-          imageSrc: "/furniture4.png",
+          imageSrc: "/landing/furniture4.png",
           imageAlt: "Furniture 4",
           title: "King Size Bed",
           subtitle: "Modern frame with storage",
         },
         {
-          imageSrc: "/furniture5.png",
+          imageSrc: "/landing/furniture5.png",
           imageAlt: "Furniture 5",
           title: "Side Cabinet",
           subtitle: "Compact stylish storage",
@@ -99,7 +99,7 @@ export const homeContent = {
     stories: {
       title: "See more of our latest stories.",
       itemsCount: 5,
-      imageSrc: "/latest-stories.png",
+      imageSrc: "/landing/latest-stories.png",
       imageAltPrefix: "Story",
     },
   },
@@ -109,7 +109,7 @@ export const homeContent = {
     description:
       "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam.",
     cta: "Discover more",
-    imageSrc: "/jamb-journal.png",
+    imageSrc: "/landing/jamb-journal.png",
     imageAlt: "Jamb Journal cover",
   },
 } as const;

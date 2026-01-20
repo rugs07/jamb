@@ -6,7 +6,6 @@ interface TwoColumnSectionProps {
   buttonText: string;
   imageSrc: string;
   imageAlt: string;
-  backgroundColor?: "beige" | "light-grey" | "default";
   imagePosition?: "left" | "right";
   journalLabel?: string;
 }
@@ -17,27 +16,20 @@ export default function TwoColumnSection({
   buttonText,
   imageSrc,
   imageAlt,
-  backgroundColor = "beige",
   imagePosition = "right",
   journalLabel,
 }: TwoColumnSectionProps) {
-  const bgClass =
-    backgroundColor === "beige"
-      ? "bg-beige"
-      : backgroundColor === "light-grey"
-        ? "bg-light-grey"
-        : "";
 
   const textContent = (
-    <div className="flex flex-col gap-6 mx-auto">
+    <div className="flex flex-col mx-auto">
       {journalLabel && (
-        <div className="text-xs uppercase tracking-[0.12em] opacity-60 text-center">
+        <div className="text-[12px] mb-4 uppercase tracking-[0.12em] opacity-60 text-center">
           {journalLabel}
         </div>
       )}
-      <h2 className="fl1 text-center">{title}</h2>
-      <p className="fl3 max-w-3xl text-center">{description}</p>
-      <button className="btn-primary w-fit text-center mx-auto">{buttonText}</button>
+      <h2 className="fl1 text-center title-content-gap">{title}</h2>
+      <p className="fl2 max-w-3xl text-center">{description}</p>
+      <button className="btn-primary w-fit text-center mx-auto mt-8">{buttonText}</button>
     </div>
   );
 
@@ -54,7 +46,7 @@ export default function TwoColumnSection({
   );
 
   return (
-    <section className={bgClass}>
+    <section>
       <div className="container-padding section-block-padding">
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-14">
           {imagePosition === "left" ? (

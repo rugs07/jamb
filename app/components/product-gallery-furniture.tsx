@@ -22,7 +22,7 @@ export default function ProductGalleryFurniture({
   return (
     <section className="bg-[#E3E3E3]">
       <div className="container-padding section-block-padding">
-        <h2 className="fl2 mb-6 md:mb-8 text-center">{title}</h2>
+        <h2 className="fl1 title-content-gap text-center">{title}</h2>
 
         <div className="gallery-grid">
           {products.map((product) => (
@@ -30,7 +30,7 @@ export default function ProductGalleryFurniture({
               key={product.imageSrc}
               className="flex flex-col"
             >
-              <div className="relative w-full aspect-[3/4] overflow-hidden max-h-[300px]">
+              <div className="relative w-full aspect-[3/4] title-content-gap-sm overflow-hidden max-h-[300px]">
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
@@ -40,8 +40,8 @@ export default function ProductGalleryFurniture({
                 />
               </div>
 
-              <h3 className="fl3 mt-3 text-center">{product.title}</h3>
-              <p className="text-sm text-center text-[#555555] mt-1">
+              <h3 className="fl3 text-center">{product.title}</h3>
+              <p className="fl4 text-center">
                 {product.subtitle}
               </p>
             </div>

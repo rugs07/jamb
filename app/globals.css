@@ -95,16 +95,21 @@
 /* Minimal utility set */
 @layer utilities {
   .fl1 {
-    @apply text-[20px] font-galaxie-bold leading-[1.15] md:text-[26px] xl:text-[28px] 3xl:text-[32px] text-[#000000];
+    @apply text-[20px] font-galaxie-medium leading-[1.15] md:text-[26px] xl:text-[28px] 3xl:text-[34px] text-[#000000];
   }
 
   .fl2 {
-    @apply font-galaxie-semibold md:text-[22px] xl:text-[24px] 3xl:text-[26px] text-[16px] text-[#000000];
+    @apply font-galaxie-medium md:text-[14px] 3xl:text-[16px] text-[12px] text-[#000000] leading-[1.2];
   }
 
   .fl3 {
-    @apply font-galaxie-medium md:text-[16px] xl:text-[18px] 3xl:text-[20px] text-[14px] text-[#000000] leading-[1.2] md:leading-[1.4];
+    @apply font-galaxie-bold md:text-[14px] 3xl:text-[16px] text-[12px] text-[#737373] leading-[1.2] mb-2 md:mb-3;
   }
+
+  .fl4 {
+    @apply font-galaxie-medium md:text-[14px] 3xl:text-[16px] text-[12px] text-[#737373] leading-[1.2];
+  }
+  
 
   /* Spacing */
   .container-padding {
@@ -121,6 +126,14 @@
 
   .section-block-bottom {
     @apply pb-10 md:pb-16 3xl:pb-20;
+  }
+
+  .title-content-gap{
+    @apply mb-4 md:mb-8
+  }
+
+  .title-content-gap-sm{
+    @apply mb-3 md:mb-6
   }
 
   /* Button */

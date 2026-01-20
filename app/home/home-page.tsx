@@ -32,7 +32,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       <Header />
-      <img src="/hero.png" className="mx-auto w-full container-padding" alt="" />
+      <img src="/landing/hero.png" className="mx-auto w-full container-padding" alt="" />
       <Navigation />
 
       <HeroSection
@@ -50,7 +50,6 @@ export default function HomePage() {
         buttonText={homeContent.sections.lighting.cta}
         imageSrc={homeContent.sections.lighting.imageSrc}
         imageAlt={homeContent.sections.lighting.imageAlt}
-        backgroundColor="beige"
       />
 
       <ProductGalleryChimney
@@ -69,7 +68,6 @@ export default function HomePage() {
         buttonText={homeContent.sections.furniture.cta}
         imageSrc={homeContent.sections.furniture.imageSrc}
         imageAlt={homeContent.sections.furniture.imageAlt}
-        backgroundColor="beige"
       />
 
       <ProductGalleryFurniture
@@ -83,19 +81,18 @@ export default function HomePage() {
         buttonText={homeContent.sections.journal.cta}
         imageSrc={homeContent.sections.journal.imageSrc}
         imageAlt={homeContent.sections.journal.imageAlt}
-        backgroundColor="beige"
         journalLabel={homeContent.sections.journal.label}
       />
 
       <section className="bg-[#E3E3E3]">
         <div className="container-padding section-block-padding">
-          <h2 className="fl2 text-center mb-6 md:mb-8">
+          <h2 className="fl1 text-center title-content-gap">
             {homeContent.galleries.stories.title}
           </h2>
           <div className="gallery-grid">
             {latestStories.map((story) => (
               <div key={story.imageAlt} className="flex flex-col">
-                <div className="relative w-full aspect-square overflow-hidden">
+                <div className="relative w-full aspect-square overflow-hidden title-content-gap-sm">
                   <Image
                     src={story.imageSrc}
                     alt={story.imageAlt}
@@ -103,8 +100,8 @@ export default function HomePage() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="fl3 mt-3 text-center">{story.title}</h3>
-                <p className="text-sm text-[#555555] mt-1 text-center">
+                <h3 className="fl3 text-center">{story.title}</h3>
+                <p className="fl4 text-center">
                   {story.subtitle}
                 </p>
               </div>

@@ -8,7 +8,7 @@ export default function Navigation() {
           <span key={item} className="flex items-center gap-3">
             <a
               href={`#${item.toLowerCase()}`}
-              className="no-underline text-inherit transition-opacity hover:opacity-70"
+              className="text-[#9C9C9D] transition-opacity hover:text-black"
             >
               {item}
             </a>
