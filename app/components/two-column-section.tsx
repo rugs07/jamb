@@ -19,7 +19,6 @@ export default function TwoColumnSection({
   imagePosition = "right",
   journalLabel,
 }: TwoColumnSectionProps) {
-
   const textContent = (
     <div className="flex flex-col mx-auto">
       {journalLabel && (
@@ -29,7 +28,9 @@ export default function TwoColumnSection({
       )}
       <h2 className="fl1 text-center title-content-gap">{title}</h2>
       <p className="fl2 max-w-3xl text-center">{description}</p>
-      <button className="btn-primary w-fit text-center mx-auto mt-8">{buttonText}</button>
+      <button className="btn-primary w-fit text-center mx-auto mt-4 md:mt-8">
+        {buttonText}
+      </button>
     </div>
   );
 
@@ -49,17 +50,9 @@ export default function TwoColumnSection({
     <section>
       <div className="container-padding section-block-padding">
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-14">
-          {imagePosition === "left" ? (
-            <>
-              {imageContent}
-              {textContent}
-            </>
-          ) : (
-            <>
-              {textContent}
-              {imageContent}
-            </>
-          )}
+          <div className="order-2 md:order-none">{textContent}</div>
+
+          <div className="order-1 md:order-none">{imageContent}</div>
         </div>
       </div>
     </section>

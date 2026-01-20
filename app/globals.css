@@ -109,7 +109,6 @@
   .fl4 {
     @apply font-galaxie-medium md:text-[14px] 3xl:text-[16px] text-[12px] text-[#737373] leading-[1.2];
   }
-  
 
   /* Spacing */
   .container-padding {
@@ -128,12 +127,12 @@
     @apply pb-10 md:pb-16 3xl:pb-20;
   }
 
-  .title-content-gap{
-    @apply mb-4 md:mb-8
+  .title-content-gap {
+    @apply mb-4 md:mb-8;
   }
 
-  .title-content-gap-sm{
-    @apply mb-3 md:mb-6
+  .title-content-gap-sm {
+    @apply mb-3 md:mb-6;
   }
 
   /* Button */
@@ -152,4 +151,17 @@
   .gallery-grid {
     @apply grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5;
   }
+}
+
+.slick-dots {
+  bottom: -40px !important;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: #737373 !important;
+  opacity: 0.5 !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #555555 !important;
+  opacity: 1 !important;
 }

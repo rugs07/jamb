@@ -32,7 +32,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       <Header />
-      <img src="/landing/hero.png" className="mx-auto w-full container-padding" alt="" />
+      <img src="/landing/hero.png" className="mx-auto w-full container-padding h-[300px] md:h-auto" alt="" />
       <Navigation />
 
       <HeroSection
@@ -84,31 +84,10 @@ export default function HomePage() {
         journalLabel={homeContent.sections.journal.label}
       />
 
-      <section className="bg-[#E3E3E3]">
-        <div className="container-padding section-block-padding">
-          <h2 className="fl1 text-center title-content-gap">
-            {homeContent.galleries.stories.title}
-          </h2>
-          <div className="gallery-grid">
-            {latestStories.map((story) => (
-              <div key={story.imageAlt} className="flex flex-col">
-                <div className="relative w-full aspect-square overflow-hidden title-content-gap-sm">
-                  <Image
-                    src={story.imageSrc}
-                    alt={story.imageAlt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="fl3 text-center">{story.title}</h3>
-                <p className="fl4 text-center">
-                  {story.subtitle}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProductGallery
+        title={homeContent.galleries.stories.title}
+        products={latestStories}
+      />
 
       <SubscriptionSection
         title={homeContent.subscription.title}
