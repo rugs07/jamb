@@ -103,8 +103,8 @@ export default function HomePage() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="fl4 mt-3">{story.title}</h3>
-                <p className="text-sm text-[#555555] mt-1">
+                <h3 className="fl3 mt-3 text-center">{story.title}</h3>
+                <p className="text-sm text-[#555555] mt-1 text-center">
                   {story.subtitle}
                 </p>
               </div>

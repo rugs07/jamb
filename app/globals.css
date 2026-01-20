@@ -4,92 +4,29 @@
 /* Light & dark tokens */
 :root {
   --background: #ffffff;
-  --foreground: #232323;
+  --foreground: #000000;
   --button: #737373;
 }
 
 @layer base {
   @font-face {
-    font-family: "PoppinsBold";
-    src: url("/fonts/Poppins-Bold.ttf");
+    font-family: "GalaxieBold";
+    src: url("/fonts/CopernicusTrial-Bold-BF6616045097aac.ttf");
     font-weight: 600;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Poppins";
-    src: url("/fonts/Poppins-Regular.woff2");
+    font-family: "GalaxieMedium";
+    src: url("/fonts/CopernicusTrial-Medium-BF66160450d988d.ttf");
     font-weight: 400;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "PoppinsSemiBold";
-    src: url("/fonts/Poppins-SemiBold.ttf");
+    font-family: "GalaxieSemiBold";
+    src: url("/fonts/CopernicusTrial-Semibold-BF66160451692c7.ttf");
     font-weight: 500;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "PoppinsLight";
-    src: url("/fonts/Poppins-Light.ttf");
-    font-weight: 200;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "PoppinsMedium";
-    src: url("/fonts/Poppins-Medium.ttf");
-    font-weight: 200;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "MontserratLight";
-    src: url("/fonts/Montserrat-Light.woff2");
-    font-weight: 300;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "MontserratBold";
-    src: url("/fonts/Montserrat-Bold.woff2");
-    font-weight: 700;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "MontserratSemiBold";
-    src: url("/fonts/Montserrat-SemiBold.woff2");
-    font-weight: 600;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "InterSemiBold";
-    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
-    font-weight: 600;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "InterMedium";
-    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "InterLight";
-    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
-    font-weight: 300;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "SoraBold";
-    src: url("/fonts/Sora-VariableFont_wght.ttf");
-    font-weight: 600;
     font-display: swap;
   }
 
@@ -150,41 +87,23 @@
   --breakpoint-3xl: 1600px;
   --breakpoint-4xl: 1920px;
 
-  --font-poppins: "Poppins", sans-serif;
-  --font-poppins-bold: "PoppinsBold", sans-serif;
-  --font-poppins-semibold: "PoppinsSemiBold", sans-serif;
-  --font-poppins-light: "PoppinsLight", sans-serif;
-  --font-poppins-medium: "PoppinsMedium", sans-serif;
-  --font-mont: "Montserrat", sans-serif;
-  --font-mont-bold: "MontserratBold", sans-serif;
-  --font-mont-light: "MontserratLight", sans-serif;
-  --font-mont-semibold: "MontserratSemiBold", sans-serif;
-  --font-inter-semibold: "InterSemiBold", sans-serif;
-  --font-inter-light: "InterLight", sans-serif;
-  --font-inter-medium: "InterMedium", sans-serif;
-  --font-sora-bold: "SoraBold", sans-serif;
+  --font-galaxie-bold: "GalaxieBold", sans-serif;
+  --font-galaxie-medium: "GalaxieMedium", sans-serif;
+  --font-galaxie-semibold: "GalaxieSemiBold", sans-serif;
 }
 
 /* Minimal utility set */
 @layer utilities {
   .fl1 {
-    @apply text-[20px] leading-[1.15] md:text-[26px] xl:text-[28px] 3xl:text-[32px] font-sora-bold text-[#232323];
+    @apply text-[20px] font-galaxie-bold leading-[1.15] md:text-[26px] xl:text-[28px] 3xl:text-[32px] text-[#000000];
   }
 
   .fl2 {
-    @apply font-inter-semibold md:text-[22px] xl:text-[24px] 3xl:text-[26px] text-[16px] text-[#232323];
+    @apply font-galaxie-semibold md:text-[22px] xl:text-[24px] 3xl:text-[26px] text-[16px] text-[#000000];
   }
 
   .fl3 {
-    @apply font-inter-medium md:text-[16px] xl:text-[18px] 3xl:text-[20px] text-[14px] text-[#232323] leading-[1.2] md:leading-[1.4];
-  }
-
-  .fl4 {
-    @apply font-inter-light md:text-[14px] text-[12px] text-[#232323];
-  }
-
-  .muted {
-    @apply text-[#555555];
+    @apply font-galaxie-medium md:text-[16px] xl:text-[18px] 3xl:text-[20px] text-[14px] text-[#000000] leading-[1.2] md:leading-[1.4];
   }
 
   /* Spacing */
@@ -206,7 +125,7 @@
 
   /* Button */
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 text-[14px] py-2 w-fit tracking-wide transition-colors;
+    @apply inline-flex items-center justify-center px-6 text-[14px] font-galaxie-medium py-2 w-fit min-w-[300px] tracking-wide transition-colors;
     border: 1px solid var(--button);
     color: var(--button);
   }

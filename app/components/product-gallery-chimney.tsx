@@ -20,7 +20,7 @@ export default function ProductGalleryChimney({
   return (
     <section className='bg-[#E3E3E3]'>
       <div className="container-padding section-block-top">
-        <h2 className="fl2 text-center">{title}</h2>
+        <h2 className="fl2 text-center mb-8 md:mb-12">{title}</h2>
         <div className="grid grid-cols-4 gap-4">
           {products.map((product, index) => (
             <div key={index} className="flex flex-col">
@@ -29,10 +29,10 @@ export default function ProductGalleryChimney({
                   src={product.imageSrc}
                   alt={product.imageAlt}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
-              <h3 className="fl4 mt-3 text-center">{product.title}</h3>
+              <h3 className="fl3 mt-3 text-center">{product.title}</h3>
               <p className="text-sm text-[#555555] mt-1 text-center">{product.subtitle}</p>
             </div>
           ))}

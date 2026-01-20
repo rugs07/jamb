@@ -13,7 +13,7 @@ export default function Footer() {
 
           {/* Chimneypieces */}
           <div className="flex flex-col gap-2">
-            <div className="fl4">Reproduction Chimneypieces</div>
+            <div className="fl3">Reproduction Chimneypieces</div>
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Marble
             </a>
@@ -26,7 +26,7 @@ export default function Footer() {
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Guide to Jamb Marbles
             </a>
-            <div className="fl4 mt-6">Antique Chimneypieces</div>
+            <div className="fl3 mt-6">Antique Chimneypieces</div>
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               French & Italian
             </a>
@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Lighting & Furniture */}
           <div className="flex flex-col gap-2">
-            <div className="fl4">Reproduction Lighting</div>
+            <div className="fl3">Reproduction Lighting</div>
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Hanging Globes
             </a>
@@ -62,7 +62,7 @@ export default function Footer() {
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Chains & Brackets
             </a>
-            <div className="fl4 mt-6">Reproduction Furniture</div>
+            <div className="fl3 mt-6">Reproduction Furniture</div>
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Seating
             </a>
@@ -79,7 +79,7 @@ export default function Footer() {
 
           {/* Antique Furniture & Journal */}
           <div className="flex flex-col gap-2">
-            <div className="fl4">Antique Furniture</div>
+            <div className="fl3">Antique Furniture</div>
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Seating
             </a>
@@ -110,7 +110,7 @@ export default function Footer() {
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Lighting
             </a>
-            <div className="fl4 mt-6">Journal</div>
+            <div className="fl3 mt-6">Journal</div>
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Praesentium
             </a>
@@ -130,7 +130,7 @@ export default function Footer() {
 
           {/* About & Newsletter */}
           <div className="flex flex-col gap-2">
-            <div className="fl4">About</div>
+            <div className="fl3">About</div>
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Founders
             </a>
@@ -152,7 +152,7 @@ export default function Footer() {
             <a href="#" className="no-underline text-inherit hover:opacity-70">
               Terms & Conditions
             </a>
-            <div className="fl4 mt-6">Newsletter</div>
+            <div className="fl3 mt-6">Newsletter</div>
             <div className="flex flex-col gap-3">
               <div className="flex gap-2">
                 <input

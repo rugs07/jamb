@@ -40,7 +40,7 @@ export default function ProductGalleryFurniture({
                 />
               </div>
 
-              <h3 className="fl4 mt-3 text-center">{product.title}</h3>
+              <h3 className="fl3 mt-3 text-center">{product.title}</h3>
               <p className="text-sm text-center text-[#555555] mt-1">
                 {product.subtitle}
               </p>

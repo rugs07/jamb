@@ -36,7 +36,7 @@ export default function TwoColumnSection({
         </div>
       )}
       <h2 className="fl1 text-center">{title}</h2>
-      <p className="fl4 muted max-w-3xl text-center">{description}</p>
+      <p className="fl3 max-w-3xl text-center">{description}</p>
       <button className="btn-primary w-fit text-center mx-auto">{buttonText}</button>
     </div>
   );
