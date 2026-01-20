@@ -82,6 +82,7 @@ export default function HomePage() {
         imageSrc={homeContent.sections.journal.imageSrc}
         imageAlt={homeContent.sections.journal.imageAlt}
         journalLabel={homeContent.sections.journal.label}
+        backgroundColor="#DFDAD7"
       />
 
       <ProductGallery
