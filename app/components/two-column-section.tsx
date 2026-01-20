@@ -27,7 +27,7 @@ export default function TwoColumnSection({
         </div>
       )}
       <h2 className="fl1 text-center title-content-gap">{title}</h2>
-      <p className="fl2 max-w-3xl text-center">{description}</p>
+      <p className="fl2 md:w-[80%] w-full mx-auto text-center">{description}</p>
       <button className="btn-primary w-fit text-center mx-auto mt-4 md:mt-8">
         {buttonText}
       </button>

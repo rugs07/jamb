@@ -2,7 +2,7 @@ export const homeContent = {
   hero: {
     title: "Fireplaces",
     description:
-      "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
+      "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam.",
     primaryCta: "Explore our Fireplaces",
     secondaryCta: "Sell an Antique Chimneypiece",
     imageSrc: "/landing/fireplaces.png",
@@ -13,7 +13,7 @@ export const homeContent = {
     fireplaces: {
       title: "Fireplaces",
       description:
-        "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
+        "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam.",
       cta: "Explore our Fireplaces",
       imageSrc: "/landing/fireplaces.png",
       imageAlt: "Fireplace section",
@@ -21,7 +21,7 @@ export const homeContent = {
     lighting: {
       title: "Lighting",
       description:
-        "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
+        "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam.",
       cta: "Explore our Lighting",
       imageSrc: "/landing/lightning.png",
       imageAlt: "Lighting hero",
@@ -29,7 +29,7 @@ export const homeContent = {
     furniture: {
       title: "Furniture",
       description:
-        "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
+        "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam.",
       cta: "Explore our Furniture",
       imageSrc: "/landing/furniture.png",
       imageAlt: "Furniture hero",
@@ -38,7 +38,7 @@ export const homeContent = {
       label: "JOURNAL",
       title: "The Grand Collection",
       description:
-        "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit...",
+        "Lorem ipsum dolor sit amet, incididunt ut labore et dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim labore et dolore magn ad minim veniam.",
       cta: "Discover more",
       imageSrc: "/landing/grand-collection.png",
       imageAlt: "Journal hero",
